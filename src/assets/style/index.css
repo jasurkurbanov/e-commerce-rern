@@ -1,0 +1,22 @@
+@import url(./colors.css);
+@import url(./fonts.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input {
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-size: 20px;
+  width: 90%;
+  color: var(--tertiary);
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+  background-color: var(--bg);
+}
