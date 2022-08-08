@@ -1,11 +1,6 @@
 import { useState } from "react";
 import styles from "./style.module.css";
-import clsx from "clsx";
-import {
-  BsSearch,
-  BsFillInfoCircleFill,
-  BsArrowBarRight,
-} from "react-icons/bs";
+import { BsSearch, BsFillInfoCircleFill } from "react-icons/bs";
 
 import { ImExit } from "react-icons/im";
 import { Product } from "./components/product";
@@ -30,7 +25,7 @@ function Home() {
   return (
     <>
       <nav className={styles.leftSidebarDefault}>
-        <span className={styles.logoText}>SOLID</span>
+        <LogoIcon />
 
         <div>
           <Link to="/invoices">
@@ -71,6 +66,7 @@ function Home() {
           </div>
         </div>
         <div className={styles.rightSidebar}>
+          <p className="bagTitle">Bag</p>
           <button className="primary">
             <CheckoutIcon />
             View Bag
